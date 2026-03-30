@@ -1,8 +1,8 @@
-# import random module
+# import the random module
 
 import random
 
-# Definr lists of subjects, actions and places for the headlines. They should be in the indian version
+# Define lists of subjects, actions, and places for the headlines. They should be in the indian version
 
 indian_subjects = ["Shahrukh khan", "Virat kohli", "Niramala sitaraman", "Allu arjun", "Vamshi"]
 indian_actions = ["launches", "kills", "eats", "says", "buys"]
@@ -18,7 +18,7 @@ while True:
     headline = f"BREAKING NEWS:{subject} {action} {place}"
     print("\n" + headline)
     # Ask the user if they want to generate another headline
-    user_input = input("\nDo you want another headline?(yes/no):").strip().lower()
+    user_input = input("\nDo you want another headline?(yes/no):").strip().lower()# .strip cuts the spaces and lower converts all the letters into lowercase.
     
     if user_input == "no":
         print("Thank you for using fake news headlines generator. Have a funny day!")
